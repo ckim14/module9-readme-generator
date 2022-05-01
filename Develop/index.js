@@ -52,7 +52,7 @@ const questions = () => {
     },
     {
       type: "input",
-      name: "installation instructions",
+      name: "installation",
       message: "How do you install your project?",
     },
     {
