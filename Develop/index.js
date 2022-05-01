@@ -8,7 +8,7 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
-      title: "github",
+      name: "github",
       message: "What is your Github username? (Required)",
       validate: (githubInput) => {
         if (githubInput) {
@@ -21,7 +21,7 @@ const questions = () => {
     },
     {
       type: "input",
-      title: "email",
+      name: "email",
       message: "What is your email address? (Required)",
       validate: (githubInput) => {
         if (githubInput) {
@@ -34,7 +34,7 @@ const questions = () => {
     },
     {
       type: "input",
-      title: "title",
+      name: "title",
       message: "What is the title of your project? (Required)",
       validate: (titleInput) => {
         if (titleInput) {
@@ -74,27 +74,14 @@ const questions = () => {
       type: "checkbox",
       name: "license",
       message: "Pick your license.",
+      validate: (input) => {
+        console.log(input);
+        return input.length != 1 ? "You must pick a single license!" : true;
+      },
       choices: ["MIT", "GNU GPLv3", "Apache", "Mozilla", "Boost", "Unlicense"],
     },
   ]);
 };
-
-questions().then();
-
-// inquirer
-//   .prompt([
-//     /* Pass your questions in here */
-//   ])
-//   .then((answers) => {
-//     // Use user feedback for... whatever!!
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -109,7 +96,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then(function (userInput) {
+  console.log("we here");
+  questions().then(function (userInput) {
     console.log(userInput);
     writeToFile("README.md", generateMarkdown(userInput));
   });
