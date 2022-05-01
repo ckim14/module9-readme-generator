@@ -78,7 +78,7 @@ const questions = () => {
         console.log(input);
         return input.length != 1 ? "You must pick a single license!" : true;
       },
-      choices: ["MIT", "GNU GPLv3", "Apache", "Mozilla", "Boost", "Unlicense"],
+      choices: ["MIT", "GNU_GPLv3", "Apache", "Mozilla", "Boost", "Unlicense"],
     },
   ]);
 };
