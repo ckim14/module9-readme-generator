@@ -63,12 +63,12 @@ const questions = () => {
     {
       type: "input",
       name: "contribution",
-      message: "Any contribution guidelines we should know about?",
+      message: "How can I contribute?",
     },
     {
       type: "input",
       name: "testinstructions",
-      message: "How should we test?",
+      message: "How should I test?",
     },
     {
       type: "checkbox",

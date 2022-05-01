@@ -1,6 +1,6 @@
-# s
+# README generator
 
-  ![](https://img.shields.io/badge/license-Unlicense-blue.svg)
+  ![](https://img.shields.io/badge/license-GNU_GPLv3-blue.svg)
 
   ## Table of Contents:
   - [Description](#description)
@@ -13,25 +13,25 @@
 
 
   ## Description: 
-  s
+  This application will automatically generate a professional README file through the terminal
 
   ## Installation:
-  s
+  npm inquirer install
 
   ## Usage:
-  s
+  need to install inquirer and markdown
  
   ## License
-  Visit https://choosealicense.com/licenses for more details on the Unlicense permissions.
+  Visit https://choosealicense.com/licenses for more details on the GNU_GPLv3 permissions.
 
   ## Contribution:
-  s
+  no
 
   ## Tests:
-  s
+  n/a
 
   ## Questions:
   If you have any questions, reach out to me via email or GitHub.
-  - Email: s
-  - Github: https://github.com/as
+  - Email: chikakim@gmail.com
+  - Github: https://github.com/ckim14
 
